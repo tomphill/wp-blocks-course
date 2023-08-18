@@ -1,0 +1,126 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "blockylicious/curvy",
+  "version": "0.1.0",
+  "title": "Curvy",
+  "category": "blockylicious",
+  "icon": "smiley",
+  "description": "Curvy shape dividers to make dividing page content more interesting.",
+  "supports": {
+    "html": false,
+    "color": {
+      "background": true,
+      "link": true,
+      "text": true
+    },
+    "spacing": {
+      "padding": true
+    }
+  },
+  "variations": [
+    {
+      "name": "top-only",
+      "title": "Curvy - top only",
+      "attributes": {
+        "enableBottomCurve": false,
+        "enableTopCurve": true
+      }
+    },
+    {
+      "name": "bottom-only",
+      "title": "Curvy - bottom only",
+      "attributes": {
+        "enableBottomCurve": true,
+        "enableTopCurve": false
+      }
+    }
+  ],
+  "example": {
+    "innerBlocks": [
+      {
+        "name": "core/heading",
+        "attributes": {
+          "content": "Lorem ipsum"
+        }
+      },
+      {
+        "name": "core/paragraph",
+        "attributes": {
+          "content": "This is an example curvy block"
+        }
+      }
+    ]
+  },
+  "attributes": {
+    "style": {
+      "type": "object",
+      "default": {
+        "color": {
+          "background": "#ec4899"
+        },
+        "spacing": {
+          "padding": {
+            "top": "80px",
+            "bottom": "80px",
+            "left": "50px",
+            "right": "50px"
+          }
+        }
+      }
+    },
+    "enableTopCurve": {
+      "type": "boolean",
+      "default": true
+    },
+    "topWidth": {
+      "type": "number",
+      "default": 100
+    },
+    "topHeight": {
+      "type": "number",
+      "default": 100
+    },
+    "topFlipX": {
+      "type": "boolean",
+      "default": false
+    },
+    "topFlipY": {
+      "type": "boolean",
+      "default": false
+    },
+    "topColor": {
+      "type": "string",
+      "default": "#FFFFFF"
+    },
+    "enableBottomCurve": {
+      "type": "boolean",
+      "default": true
+    },
+    "bottomWidth": {
+      "type": "number",
+      "default": 100
+    },
+    "bottomHeight": {
+      "type": "number",
+      "default": 100
+    },
+    "bottomFlipX": {
+      "type": "boolean",
+      "default": false
+    },
+    "bottomFlipY": {
+      "type": "boolean",
+      "default": false
+    },
+    "bottomColor": {
+      "type": "string",
+      "default": "#FFFFFF"
+    }
+  },
+  "textdomain": "blockylicious",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

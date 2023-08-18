@@ -1,0 +1,59 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blockylicious/clicky-button",
+	"version": "0.1.0",
+	"title": "Clicky button",
+	"category": "blockylicious",
+	"icon": "smiley",
+	"description": "A call to action button that links to a particular post or page rather than hardcoding the destination URL.",
+	"supports": {
+		"html": false,
+		"color": {
+			"background": true,
+			"text": true,
+			"link": false,
+			"gradients": true,
+			"enableContrastChecker": true
+		},
+		"spacing": {
+			"padding": true
+		}
+	},
+	"attributes": {
+		"postType": {
+			"type": "string",
+			"default": ""
+		},
+		"linkedPost": {
+			"type": "number"
+		},
+		"labelText": {
+			"type": "string",
+			"default": ""
+		},
+		"style": {
+			"type": "object",
+			"default": {
+				"color": {
+					"background": "#000000",
+					"text": "#FFFFFF"
+				},
+				"spacing": {
+					"padding": {
+						"top": "15px",
+						"bottom": "15px",
+						"left": "15px",
+						"right": "15px"
+					}
+				}
+			}
+		}
+	},
+	"textdomain": "blockylicious",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"parent": ["blockylicious/clicky-group"]
+}

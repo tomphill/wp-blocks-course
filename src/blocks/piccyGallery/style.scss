@@ -1,0 +1,32 @@
+.wp-block-blockylicious-piccy-gallery {
+	.image-preview {
+		width: 100%;
+	}
+	.gallery-thumbnails {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		gap: 10px;
+	}
+	.thumb {
+		border-radius: 12px;
+		border: 5px solid transparent;
+		cursor: pointer;
+		display: block;
+		filter: brightness(0.5);
+		transition: 0.2s ease all;
+		transform: scale(1);
+		box-sizing: border-box;
+		width: 100%;
+		height: 75px;
+		object-fit: cover;
+
+		&:hover {
+			filter: brightness(1);
+		}
+		&.selected {
+			border: 5px solid #006dff;
+			transform: scale(1.1);
+			filter: brightness(1);
+		}
+	}
+}

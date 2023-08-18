@@ -1,0 +1,33 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-blockylicious-curvy {
+	position: relative;
+	background: #ec4899;
+	padding: 80px 50px;
+
+	.curve {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		overflow: hidden;
+
+		&.top-curve {
+			top: 0;
+		}
+
+		&.bottom-curve {
+			bottom: 0;
+		}
+
+		svg {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"blocks/clickyGroup/style-index.css","mappings":";;;AAAA;EACC;EACA;AACD,C","sources":["webpack://curvy/./src/blocks/clickyGroup/style.scss"],"sourcesContent":[".wp-block-blockylicious-clicky-group {\n\tdisplay: flex;\n\tflex-wrap: wrap;\n}\n"],"names":[],"sourceRoot":""}

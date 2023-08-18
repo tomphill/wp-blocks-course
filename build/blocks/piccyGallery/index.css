@@ -1,0 +1,32 @@
+/*!************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/piccyGallery/editor.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************/
+.wp-block-blockylicious-piccy-gallery .preview-mode {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+.wp-block-blockylicious-piccy-gallery .edit-mode {
+  padding: 40px;
+  background: #eee;
+  position: relative;
+  box-sizing: border-box;
+}
+.wp-block-blockylicious-piccy-gallery .edit-mode .piccy-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  padding: 8px;
+  background: #ddd;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+.wp-block-blockylicious-piccy-gallery .edit-mode .piccy-gallery-inner-blocks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+/*# sourceMappingURL=index.css.map*/
