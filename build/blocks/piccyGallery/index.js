@@ -317,7 +317,7 @@ module.exports = window["wp"]["i18n"];
   \********************************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"blockylicious/piccy-gallery","version":"0.1.0","title":"Piccy gallery","category":"blockylicious","icon":"images-alt2","description":"An interactive image gallery","supports":{"html":false},"textdomain":"blockylicious","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","script":"file:./script.js","render":"file:./render.php"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"blockylicious/piccy-gallery","version":"0.1.0","title":"Piccy gallery","category":"blockylicious","icon":"images-alt2","description":"An interactive image gallery","supports":{"html":false},"textdomain":"blockylicious","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./script.js","render":"file:./render.php"}');
 
 /***/ })
 
