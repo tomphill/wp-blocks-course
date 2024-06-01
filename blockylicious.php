@@ -34,6 +34,7 @@ final class Blockylicious
 	static function init()
 	{
 		add_action('enqueue_block_assets', function () {
+			wp_enqueue_style("dashicons");
 			$style_url = plugins_url("build/style-index.css", __FILE__);
 			wp_enqueue_style('blockylicious-style', $style_url, array());
 		});

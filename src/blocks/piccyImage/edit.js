@@ -10,6 +10,11 @@ import { Icon } from "@wordpress/components";
 import { ImageThumbnail } from "../../components/imageThumbnail";
 import "./editor.scss";
 import { useImage } from "../../hooks/useImage";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPanorama } from "@fortawesome/free-solid-svg-icons";
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+config.autoAddCss = false;
 
 export default function Edit(props) {
 	const blockProps = useBlockProps();
@@ -30,7 +35,7 @@ export default function Edit(props) {
 						background: "white",
 					}}
 				>
-					<Icon icon="format-image" style={{ margin: "auto" }} />
+					<FontAwesomeIcon icon={faPanorama} style={{ margin: "auto" }} />
 				</div>
 			)}
 			<MediaUploadCheck>
